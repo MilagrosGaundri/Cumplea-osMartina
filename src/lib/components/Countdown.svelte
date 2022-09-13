@@ -1,7 +1,7 @@
 <script lang="ts">
   export let dateCountdown = "Oct 23, 2022 17:00:00";
 
-  const second = 1000,
+    const second = 1000,
       minute = second * 60,
       hour = minute * 60,
       day = hour * 24;
@@ -74,30 +74,7 @@
   .contenedor {
     margin-top: 3%;
   }
-  
-   /* li {
-    display: inline-block;
-    font-size: 1.5em;
-    list-style-type: none;
-    padding: 1em;
-    text-transform: uppercase;
-  }
-  li span {
-    display: block;
-    font-size: 4.5rem;
-  }
-  .numeros {
-    font-family: "Chela one", sans-serif;
-    font-size: 60px;
-    transition: 0.3s;
-    animation-name: fade;
-    animation-duration: 3s;
-  } .responsivo1 {
-  display: inline-block
-}
-.responsivo2 {
-  display: inline-block
-}   */
+
   @keyframes fade {
     0% {
       opacity: 0;

@@ -16,10 +16,11 @@
 		font-family: Moanas;
 		src: url('/fonts/Moanas.ttf');
 	}
-	@media (max-width: 425px) {
+	@media (max-width: 430px) {
 		:global(body) {
 			margin: 0;
 			padding: 0;
+			width: 100%;
 			background-color: var(--secondary-background);
 			background-image: url('/images/background4.png');
 			background-repeat: no-repeat;

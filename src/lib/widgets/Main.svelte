@@ -57,9 +57,9 @@
 			17:00 hs
 		</div>
 
-		<!-- <div class="Countdown">
+		<div class="Countdown">
         <Countdown/>
-      </div> -->
+      </div>
 	</div>
 </div>
 
@@ -101,7 +101,7 @@
 	}
 	.Main .separador .waves {
 		position: relative;
-		width:440px;
+		width:460px;
 		left: -5%;
 		height: 70px;
 	}
