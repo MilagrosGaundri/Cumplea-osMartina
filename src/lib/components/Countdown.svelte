@@ -12,7 +12,7 @@
       let now = new Date().getTime(),
           distance = countDown - now;
 
-      document.getElementById('dias').innerText = Math.floor(distance / (day)),
+        document.getElementById('dias').innerText = Math.floor(distance / (day)),
         document.getElementById('horas').innerText = Math.floor((distance % (day)) / (hour)),
         document.getElementById('minutos').innerText = Math.floor((distance % (hour)) / (minute)),
         document.getElementById('segundos').innerText = Math.floor((distance % (minute)) / second);

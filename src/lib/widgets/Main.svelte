@@ -55,10 +55,12 @@
         z-index: 1;
       }
       .Main .headerM .prestDisney{
+        animation: imgM 3s;
         font-size: 12px;
         z-index: 1;
       }
       .Main .bodyM{
+        animation: nameM 8s;
         margin-top: 500px;
         margin-bottom: 50px;
       }
@@ -71,26 +73,9 @@
         margin: 0px;
       }
     
-      /* .disney{
-        text-align:center;
-        position: absolute;
-        top: 0;
-        animation: imgM 3s;
-        z-index: -1; 
-        width:100px;
-        margin-top: 45px;
-      } */
-      /* .disney img{
-       
-      } */
-  /* 
-      .prueba{
+      .Main .text{
         animation: fade 8s;
-      }  */
-      /* .Countdown{
-        text-align: center;
-        align-items: center;
-      } */
+      }
       @keyframes fade {
       0% {
         opacity: 0;
