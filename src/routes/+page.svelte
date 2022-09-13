@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { onMount } from "svelte";
-	import Main from '$lib/widgets/Main.svelte'
+	import { onMount } from 'svelte';
+	import Main from '$lib/widgets/Main.svelte';
 </script>
 
 <svelte:head>
@@ -9,26 +9,25 @@
 </svelte:head>
 
 <section>
-	<Main/>
+	<Main />
 </section>
-
 <style>
 	@font-face {
 		font-family: Moanas;
-		src: url("/fonts/Moanas.ttf");
+		src: url('/fonts/Moanas.ttf');
 	}
 	@media (max-width: 425px) {
 		:global(body) {
+			margin: 0;
+			padding: 0;
+			background-color: var(--secondary-background);
+			background-image: url('/images/background4.png');
+			background-repeat: no-repeat;
+			background-size: 100%;
+			color: var(--primary-background);
+			font-family: Moanas;
+			text-align: center;
 			align-items: center;
-			background-color: var(--primary-background);
-				background-image: url("/images/background4.png");
-				background-repeat: no-repeat;
-				background-size: 100%;
-				color: var(--secondary-background);
-				font-family: Moanas;
-				font-weight: normal;
-				font-style: normal;
-				text-align: center;
 		}
 		:global(h1, h2, h3, p) {
 			color: var(--secondary-background);
@@ -43,5 +42,4 @@
 			--tertiary-background: #40b4fb;
 		}
 	}
-	
 </style>

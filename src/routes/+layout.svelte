@@ -1,41 +1,17 @@
-<script lang="ts">
-	import Header from '$lib/header/Header.svelte';
-	import '../app.css';
-</script>
 
-<!-- <Header /> -->
-
-<main>
+<div>
+	<audio src="https://www.youtube.com/embed/ftNOCfqoIjQ?controls=0" data-autoplay="0"></audio>
+	<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ftNOCfqoIjQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+	<div data-video="ftNOCfqoIjQ" data-autoplay="0" data-loop="1" id="youtube-audio">
+	</div>
 	<slot />
-</main>
+</div>
 
 <style>
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 1024px;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 40px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 40px 0;
-		}
+	div {
+		padding: 0;
+		margin: 0;
 	}
 </style>
+
+<script src="https://www.youtube.com/iframe_api"></script>

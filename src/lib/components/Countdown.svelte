@@ -41,7 +41,8 @@
 
 
 <style>
-  .contenedor{       
+  .contenedor{      
+    color: var(--primary-background); 
         width: 100%;
         text-align: center;
         align-items: center;
