@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
+	import Main from '$lib/widgets/Main.svelte'
 </script>
 
 <svelte:head>
@@ -8,49 +9,39 @@
 </svelte:head>
 
 <section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
+	<Main/>
 </section>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
+	@font-face {
+		font-family: Moanas;
+		src: url("/fonts/Moanas.ttf");
 	}
-
-	h1 {
-		width: 100%;
+	@media (max-width: 425px) {
+		:global(body) {
+			align-items: center;
+			background-color: transparent;
+				background-image: url("/images/background4.png") ;
+				background-repeat: no-repeat;
+				background-size: 100%;
+				color: var(--secondary-background);
+				font-family: Moanas;
+				font-weight: normal;
+				font-style: normal;
+				text-align: center;
+		}
+		:global(h1, h2, h3, p) {
+			color: var(--secondary-background);
+			font-family: Moanas;
+			font-weight: normal;
+			font-style: normal;
+			text-align: center;
+		}
+		:root {
+			--primary-background: #c59b79;
+			--secondary-background: #ffffff;
+			--tertiary-background: #40b4fb;
+		}
 	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
+	
 </style>
