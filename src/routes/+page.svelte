@@ -20,8 +20,8 @@
 	@media (max-width: 425px) {
 		:global(body) {
 			align-items: center;
-			background-color: transparent;
-				background-image: url("/images/background4.png") ;
+			background-color: var(--primary-background);
+				background-image: url("/images/background4.png");
 				background-repeat: no-repeat;
 				background-size: 100%;
 				color: var(--secondary-background);

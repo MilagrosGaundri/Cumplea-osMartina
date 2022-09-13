@@ -1,5 +1,8 @@
 <script  lang="ts">
-    // import Countdown from "../components/Countdown.svelte";
+    import { fade, blur, fly, slide, scale } from "svelte/transition";
+    import { quintOut } from "svelte/easing";
+    import BoopAction from '../components/BoopAction.svelte';
+    import Countdown from "$lib/components/Countdown.svelte";
     //   import Icons from '../components/Icons.svelte';
   </script>
   
@@ -8,10 +11,14 @@
         <p class="prestDisney">Disney presenta</p>
     </div>
     <div class="bodyM">
-        <h3>MARTINA</h3> 
-        <h3>Mis 7 años</h3>
+        <BoopAction boopParams={{ scale: 1.2, timing: 200}}>
+            <h1>MARTINA</h1> 
+        </BoopAction>
+        <h2>Mis 7 años</h2>
     </div> 
-    <div class="prueba">
+    <div class="separador">
+    </div>
+    <div class="text">
       <div>
         <p>Te invita a su fiesta
           de Cumpleaños
@@ -27,13 +34,16 @@
         17:00 hs
       </div>
       
-      <!-- <div class="Countdown">
+      <div class="Countdown">
         <Countdown/>
-      </div> -->
+      </div>
         
     </div>
   </div>
   <style>
+    :global(button:focus) {
+		outline: 3px solid black;
+	}
       .Main {
         justify-content: center;
         align-items: center;
@@ -41,13 +51,25 @@
         
       } 
       .Main .headerM {
-        width: 20px;
-        z-index: 1;
-      }.Main .headerM .prestDisney{
-        width: 20px;
+        width: 100%;
         z-index: 1;
       }
-    
+      .Main .headerM .prestDisney{
+        font-size: 12px;
+        z-index: 1;
+      }
+      .Main .bodyM{
+        margin-top: 500px;
+        margin-bottom: 50px;
+      }
+      .Main .bodyM h1{
+        font-size: 50px;
+        margin: 0px;
+      }
+      .Main .bodyM h2{
+        font-size: 20px;
+        margin: 0px;
+      }
     
       /* .disney{
         text-align:center;
