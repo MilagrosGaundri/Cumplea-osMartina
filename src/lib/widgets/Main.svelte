@@ -57,15 +57,25 @@
 			17:00 hs
 		</div>
 
-		<div class="Countdown">
+		<!-- <div class="Countdown">
         <Countdown/>
-      </div>
+      </div> -->
 	</div>
 </div>
 
 
 
 <style>
+	*{
+		margin: 0;
+		text-align: center;
+	}
+	.Main{
+		background-image: url('/images/background4.png'); 
+		background-repeat: no-repeat;
+		background-size: 100%;
+		position: static;
+	}
 	.Main .headerM .prestDisney {
 		animation: imgM 3s;
 		font-size: 12px;

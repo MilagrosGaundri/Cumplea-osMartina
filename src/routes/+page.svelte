@@ -12,23 +12,21 @@
 	<Main />
 </section>
 <style>
+
 	@font-face {
 		font-family: Moanas;
 		src: url('/fonts/Moanas.ttf');
 	}
-	@media (max-width: 430px) {
 		:global(body) {
 			margin: 0;
 			padding: 0;
 			width: 100%;
-			background-color: var(--secondary-background);
-			background-image: url('/images/background4.png');
+			/* background-image: url('/images/background4.png'); 
 			background-repeat: no-repeat;
-			background-size: 100%;
-			color: var(--primary-background);
+			background-size: 100%; */
+			color: var(--tertiary--background);
 			font-family: Moanas;
-			text-align: center;
-			align-items: center;
+			max-width: 430px;
 		}
 		:global(h1, h2, h3, p) {
 			color: var(--secondary-background);
@@ -42,5 +40,8 @@
 			--secondary-background: #ffffff;
 			--tertiary-background: #40b4fb;
 		}
+	section{
+		align-items: center;
+		text-align: center;
 	}
 </style>
