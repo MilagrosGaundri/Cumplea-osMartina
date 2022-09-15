@@ -67,14 +67,21 @@
 
 <style>
 	*{
+		width:425px;
+		max-width: 425px;
 		margin: 0;
-		text-align: center;
+		padding: 0;
 	}
-	.Main{
+	.Main{ 
 		background-image: url('/images/background4.png'); 
 		background-repeat: no-repeat;
 		background-size: 100%;
 		position: static;
+	}
+	.Main .headerM{
+		animation: imgM 3s;
+		font-size: 12px;
+		margin-top: 50px;
 	}
 	.Main .headerM .prestDisney {
 		animation: imgM 3s;
@@ -82,7 +89,7 @@
 	}
 	.Main .bodyM {
 		animation: nameM 8s;
-		margin-top: 580px;
+		margin-top: 550px;
 	}
 	.Main .bodyM h1 {
 		font-size: 50px;
@@ -101,8 +108,12 @@
 	.Main .separador .img{
 		text-align: center;
 	   	align-items: center;
+		   position: absolute;
+		z-index: 1;
 	}
 	.Main .separador .img img{
+		text-align: center;
+		align-items: center;
 		margin-top: 10px;
 		left: 160px;
 		width: 150px;
@@ -112,7 +123,6 @@
 	.Main .separador .waves {
 		position: relative;
 		width:460px;
-		left: -5%;
 		height: 70px;
 	}
 	.Main .text{
