@@ -41,7 +41,7 @@
 
 
 <style>
-  .contenedor{      
+  .contenedor{    
     color: var(--primary-background); 
         width: 100%;
         text-align: center;
@@ -54,7 +54,7 @@
     text-align: center;
     display: inline-block;
     margin: 0px 2px;
-    border: 3px solid var(--secondary-background);
+    border: 3px solid var(--primary-background);
     border-radius: 50%;
   }
   .cartel > div {

@@ -57,9 +57,9 @@
 			17:00 hs
 		</div>
 
-		<!-- <div class="Countdown">
+		<div class="Countdown">
         <Countdown/>
-      </div> -->
+      </div>
 	</div>
 </div>
 
@@ -71,6 +71,7 @@
 		max-width: 425px;
 		margin: 0;
 		padding: 0;
+		color: var(--secondary-background);
 	}
 	.Main{ 
 		background-image: url('/images/background4.png'); 
@@ -100,7 +101,7 @@
 		margin: 0px;
 	}
   .Main .text p {
-    color: var(--primary-background);
+    color: var(--secondary-background);
 	}
 	.Main .separador{
        margin-bottom: 70px;
