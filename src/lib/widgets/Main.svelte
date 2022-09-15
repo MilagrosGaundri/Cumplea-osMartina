@@ -51,7 +51,7 @@
 				Destellos Eventos -->
 			</p>
 		</div>
-		<div>
+		<div class="fondoNegro">
 			<div class="iconoDate">
 				<Icon value='date-time'/>
 			</div>
@@ -71,9 +71,9 @@
 	</div>
 	<div class="ubicacion">
 		<div class="texto">
-		<h1>¿En dónde?</h1>
+		<h1>¿En donde?</h1>
 		<h3>
-			Salón de eventos: Destellos Eventos
+			Salon de eventos: Destellos Eventos
 			<br />
 			Canadá 3319, Lanús Oeste
 		</h3>
@@ -127,6 +127,9 @@
 	/* .Main .text{
         animation: fade 8s;
       } */
+	  /* .Main .text .fondoNegro{
+		background-color: black;
+	  } */
   	.Main .text p {
 		color: var(--cuartry-background);
 		text-shadow: 0.1em 0.1em 0.2em var(--primary-background);
