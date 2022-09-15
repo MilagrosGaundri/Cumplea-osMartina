@@ -3,7 +3,8 @@
 	import { quintOut } from 'svelte/easing';
 	import BoopAction from '../components/BoopAction.svelte';
 	import Countdown from '$lib/components/Countdown.svelte';
-	//   import Icons from '../components/Icons.svelte';
+	import Icon from '$lib/components/Icon.svelte';
+
 </script>
 
 <div class="Main">
@@ -45,21 +46,41 @@
 	<div class="text">
 		<div>
 			<p>
-				Te invita a su fiesta de Cumpleaños en...
-				<br />
-				Destellos Eventos
+				Te invita a su fiesta de Cumpleaños <!-- en... -->
+				<!-- <br />
+				Destellos Eventos -->
 			</p>
 		</div>
 		<div>
-			<p>¿Cuando?</p>
-			Domingo 23 de octubre de 2022
-			<br />
-			17:00 hs
+			<div class="iconoDate">
+				<Icon value='date-time'/>
+			</div>
+			<div class="cuandoDato">
+				<h1>¿Cuando?</h1>
+				<h3>
+					Domingo 23 de octubre de 2022
+					<br />
+					17:00 hs
+				</h3>
+			</div>
 		</div>
 
 		<div class="Countdown">
-        <Countdown/>
-      </div>
+			<Countdown/>
+		</div>
+	</div>
+	<div class="ubicacion">
+		<div class="texto">
+		<h1>¿En dónde?</h1>
+		<h3>
+			Salón de eventos: Destellos Eventos
+			<br />
+			Canadá 3319, Lanús Oeste
+		</h3>
+		</div>
+		<div class="ubi">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.146761638954!2d-58.42071682122356!3d-34.70147808053005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccc56158a526f%3A0x867392d0bcc31e5d!2sDestellos%20Eventos!5e0!3m2!1ses-419!2sar!4v1663211850609!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
 	</div>
 </div>
 
@@ -71,42 +92,60 @@
 		max-width: 425px;
 		margin: 0;
 		padding: 0;
-		color: var(--secondary-background);
+		color: var(--cuatry-background);
 	}
 	.Main{ 
+		background-color: var(--secondary-background);
 		background-image: url('/images/background4.png'); 
 		background-repeat: no-repeat;
 		background-size: 100%;
 		position: static;
 	}
 	.Main .headerM{
-		animation: imgM 3s;
+		/* animation: imgM 3s; */
 		font-size: 12px;
 		margin-top: 50px;
 	}
 	.Main .headerM .prestDisney {
-		animation: imgM 3s;
+		/* animation: imgM 3s; */
 		font-size: 12px;
 	}
 	.Main .bodyM {
-		animation: nameM 8s;
+		/* animation: nameM 8s; */
 		margin-top: 550px;
 	}
-	.Main .bodyM h1 {
+	.Main .bodyM h1, h2 {
 		font-size: 50px;
 		margin: 0px;
+		color: var(--secondary-background);
+		text-shadow: 0.1em 0.1em 0.2em var(--cuartry-background);
 	}
 	.Main .bodyM h2 {
 		font-size: 20px;
 		margin: 0px;
 	}
-  .Main .text p {
-    color: var(--secondary-background);
+	/* .Main .text{
+        animation: fade 8s;
+      } */
+  	.Main .text p {
+		color: var(--cuartry-background);
+		text-shadow: 0.1em 0.1em 0.2em var(--primary-background);
+		font-size: 27px;
+	}
+	.Main .text .iconoDate{
+		font-size: 45px;
+		margin-top: 20px;
+	}
+	.Main .text .cuandoDato h3, h1{
+		color: var(--cuartry-background);
+		text-shadow: 0.1em 0.1em 0.2em var(--primary-background);
+		margin: 0px;
 	}
 	.Main .separador{
        margin-bottom: 70px;
     }
 	.Main .separador .img{
+	   /* animation: fade 3s; */
 		text-align: center;
 	   	align-items: center;
 		   position: absolute;
@@ -126,9 +165,23 @@
 		width:460px;
 		height: 70px;
 	}
-	.Main .text{
-        animation: fade 8s;
-      }
+	.Main .ubicacion {
+		padding: 30px 0px;
+		margin: 40px 0px;
+		background-color: var(--primary-background);
+	}
+	.Main .ubicacion .texto h1,h3{
+		padding-bottom: 30px;
+		color: var(--secondary-background);
+		text-shadow: 0.1em 0.1em 0.2em var(--cuatry-background);
+		margin: 0px;
+	}
+	.Main .ubicacion .ubi iframe{
+		width: 80%;
+		height: 200px;
+		border-radius: 5%;
+		border: 1px solid black;
+	}
 	@keyframes fade {
 		0% {
 			opacity: 0;

@@ -26,8 +26,8 @@
 		src: url('/fonts/Moanas.ttf');
 	}
 		:global(body) {
-			/* background-color: var(--primary-background);
-			background-image: url('/images/background4.png'); 
+			background-color: #161616;
+			/* background-image: url('/images/background4.png'); 
 			background-repeat: no-repeat;
 			background-size: 100%; */
 			font-family: Moanas;
@@ -40,5 +40,6 @@
 			--primary-background: #c59b79;
 			--secondary-background: #ffffff;
 			--tertiary-background: #40b4fb;
+			--cuatry-background: #000000;
 		}
 </style>
