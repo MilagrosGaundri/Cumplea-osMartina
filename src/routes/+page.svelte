@@ -41,5 +41,7 @@
 			--secondary-background: #ffffff;
 			--tertiary-background: #40b4fb;
 			--cuatry-background: #000000;
+			--quinty-background: #2e2e2e;
+			--sexty-background: #e0e0e0;
 		}
 </style>

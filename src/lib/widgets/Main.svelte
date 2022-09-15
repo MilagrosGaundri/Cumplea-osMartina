@@ -44,16 +44,74 @@
 		</svg>
 	</div>
 	<div class="text">
-		<div>
-			<p>
-				Te invita a su fiesta de Cumpleaños <!-- en... -->
+		<p>
+			Si estas leyendo esto es porque estas invitado a mi fiesta de cumpleaños
+				<!-- Te invita a su fiesta de Cumpleaños en... -->
 				<!-- <br />
 				Destellos Eventos -->
-			</p>
+		</p>
+	</div>
+	
+	<div class="donde">
+		<div class="">
+			<svg viewbox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+				  <style type="text/css">
+					.wave {
+					  animation: wave 8s linear infinite;
+					}
+			  
+					.wave1 {
+					  animation: wave1 10s linear infinite;
+					}
+			  
+					.wave2 {
+					  animation: wave2 12s linear infinite;
+					}
+			  
+					@keyframes wave {
+					  0% {
+						transform: translateX(0%);
+					  }
+			  
+					  100% {
+						transform: translateX(100%);
+					  }
+					}
+			  
+					@keyframes wave1 {
+					  0% {
+						transform: scaleY(1.2) translateX(0%);
+					  }
+			  
+					  100% {
+						transform: scaleY(1.2) translateX(100%);
+					  }
+					}
+			  
+					@keyframes wave2 {
+					  0% {
+						transform: scaleY(.8) translateX(0%);
+					  }
+			  
+					  100% {
+						transform: scaleY(.8) translateX(100%);
+					  }
+					}
+				  </style>
+				  <path id='sineWave' fill="var(--secondary-background)" fill-opacity="0.4" d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
+				</defs>
+				<use class="wave" href="#sineWave" />
+				<use class="wave" x="-100%" href="#sineWave" />
+				<use class="wave1" href="#sineWave" />
+				<use class="wave1" x="-100%" href="#sineWave" />
+				<use class="wave2" href="#sineWave" />
+				<use class="wave2" x="-100%" href="#sineWave" />
+			  </svg>
 		</div>
 		<div class="fondoNegro">
 			<div class="iconoDate">
-				<Icon value='date-time'/>
+				<Icon value='date-time' color='var(--secondary-background)'/>
 			</div>
 			<div class="cuandoDato">
 				<h1>¿Cuando?</h1>
@@ -69,11 +127,15 @@
 			<Countdown/>
 		</div>
 	</div>
+
 	<div class="ubicacion">
+		<div class="iconoDate">
+			<Icon value='location' color = 'var(--secondary-background)'/>
+		</div>
 		<div class="texto">
 		<h1>¿En donde?</h1>
 		<h3>
-			Salon de eventos: Destellos Eventos
+			Salon: Destellos Eventos
 			<br />
 			Canadá 3319, Lanús Oeste
 		</h3>
@@ -108,6 +170,7 @@
 	}
 	.Main .headerM .prestDisney {
 		/* animation: imgM 3s; */
+		color: var(--secondary-background);
 		font-size: 12px;
 	}
 	.Main .bodyM {
@@ -124,25 +187,41 @@
 		font-size: 20px;
 		margin: 0px;
 	}
-	/* .Main .text{
-        animation: fade 8s;
-      } */
-	  /* .Main .text .fondoNegro{
-		background-color: black;
-	  } */
+	.Main .text{
+        /* animation: fade 8s; */
+		padding-top: 20px;
+		padding-bottom: 60px;
+		background-color: transparent;
+    }
   	.Main .text p {
 		color: var(--cuartry-background);
 		text-shadow: 0.1em 0.1em 0.2em var(--primary-background);
 		font-size: 27px;
 	}
-	.Main .text .iconoDate{
+	.iconoDate{
 		font-size: 45px;
 		margin-top: 20px;
 	}
-	.Main .text .cuandoDato h3, h1{
-		color: var(--cuartry-background);
+	.Main .donde{
+		background-color: rgb(41, 41, 41);
+		background: linear-gradient(
+		180deg,
+		var(--secondary-background) 0%,
+		var(--sexty-background) 1.45%,
+		var(--quinty-background) 5.35%
+		);
+		color: var(--secondary-background);
+		/* padding: 50px 0px; */
+	}
+	.Main .donde .fondoNegro{
+		padding-top: 20px;
+		padding-bottom: 60px;
+	}
+	.Main .donde .cuandoDato h3, h1{
 		text-shadow: 0.1em 0.1em 0.2em var(--primary-background);
 		margin: 0px;
+		color: var(--secondary-background);
+		text-shadow: 0.1em 0.1em 0.2em var(--cuatry-background);
 	}
 	.Main .separador{
        margin-bottom: 70px;
@@ -170,7 +249,7 @@
 	}
 	.Main .ubicacion {
 		padding: 30px 0px;
-		margin: 40px 0px;
+		/* margin: 40px 0px; */
 		background-color: var(--primary-background);
 	}
 	.Main .ubicacion .texto h1,h3{

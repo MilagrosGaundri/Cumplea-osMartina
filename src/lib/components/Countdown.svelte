@@ -31,7 +31,7 @@
       <svg class="progress-ring" height="120" width="120">
         <circle
           class="progress-ring__circle"
-          stroke-width="7"
+          stroke-width="5"
           fill="transparent"
           r="45"
           cx="60"
@@ -45,7 +45,7 @@
       <svg class="progress-ring" height="120" width="120">
         <circle
           class="progress-ring__circle"
-          stroke-width="7"
+          stroke-width="5"
           fill="transparent"
           r="45"
           cx="60"
@@ -59,7 +59,7 @@
         <svg class="progress-ring" height="120" width="120">
           <circle
             class="progress-ring__circle"
-            stroke-width="7"
+            stroke-width="5"
             fill="transparent"
             r="45"
             cx="60"
@@ -73,7 +73,7 @@
           <svg class="progress-ring" height="120" width="120">
             <circle
               class="progress-ring__circle"
-              stroke-width="7"
+              stroke-width="5"
               fill="transparent"
               r="45"
               cx="60"
@@ -112,7 +112,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
     padding-top: 10px;
     margin: 0px 2px;
 }
@@ -127,23 +127,23 @@
   transition: 0.5s;
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
-  stroke: var(--cuatry-background);
+  stroke: rgb(230, 230, 230);
 }
 
   .contenedor{    
-    color: var(--cuatry-background); 
+    color: var(--secondary-background); 
         width: 100%;
         text-align: center;
         align-items: center;
   }
   .cartel > div {
-    font-size: 15px;
+    /* font-size: 15px; */
     animation: fade 3s;
     margin-top: 5px;
   }
   .cartel > div > h3 {
     margin-top: 5px;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: normal;
   }
   .h3 {
