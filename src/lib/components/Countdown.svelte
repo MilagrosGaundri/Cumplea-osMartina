@@ -25,6 +25,7 @@
 </script>
 
 <div class="contenedor">
+  <h1 class="">Faltan</h1>
   <figure class="cartel">
       <div id="dias" >{dias}</div>
       <div class="h3"><h3>Días</h3></div>
@@ -102,9 +103,6 @@
 
 
 <style>
-  .contenedor {
-    padding: 20px 0px;
-  }
   .contenedor .cartel {
     width: 20%;
     padding: 3px;
