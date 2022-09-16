@@ -5,7 +5,7 @@
 	import Countdown from '$lib/components/Countdown.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 
-	let texto='¡Hola! Confirmo mi asistencia al cumple de Martu.'
+	let texto='¡Hola! Confirmo mi asistencia al cumple de Martu ♡'
 </script>
 
 <div class="Main">
