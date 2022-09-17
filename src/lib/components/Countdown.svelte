@@ -103,6 +103,9 @@
 
 
 <style>
+  .contenedor {
+    background-color: transparent;
+  }
   .contenedor .cartel {
     width: 20%;
     padding: 3px;
@@ -125,11 +128,12 @@
   transition: 0.5s;
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
-  stroke: rgb(230, 230, 230);
+  stroke: var(--secondary-background);
 }
 
   .contenedor{    
     color: var(--secondary-background); 
+		text-shadow: 0.1em 0.1em 0.1em var(--cuatry-background);
         width: 100%;
         text-align: center;
         align-items: center;

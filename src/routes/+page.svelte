@@ -43,5 +43,11 @@
 			--cuatry-background: #000000;
 			--quinty-background: #2e2e2e;
 			--sexty-background: #e0e0e0;
+			--mar-background: #6EC9DA;
+			--mar1-background: #003b46;
+			--mar2-background: #07575b;
+			--mar3-background: #86cbd4;
+			--mar4-background: #C4DFE6;
+			--marpruebamar-background: #d1f5fc;
 		}
 </style>
