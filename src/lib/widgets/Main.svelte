@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from "$app/navigation";
 	import { fade, blur, fly, slide, scale } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import BoopAction from '../components/BoopAction.svelte';
@@ -6,6 +7,10 @@
 	import Icon from '$lib/components/Icon.svelte';
 
 	let texto='¡Hola! Confirmo mi asistencia al cumple de Martu ♡'
+
+	const onCommand = () => {
+    	return goto('https://calendar.google.com/event?action=TEMPLATE&tmeid=MmJxb3ByYzNjdGs0Z2owc2Qwb3A5MTdpcmQgMDUzOGFkNjAwZjU5MzU0N2NjNTA0YjRkNjFlZjkxMWFiOTYzM2Y4ZTY2ZDc0YTRjODU4MDlmMjQzNzBkZWEwMkBn&tmsrc=0538ad600f593547cc504b4d61ef911ab9633f8e66d74a4c85809f24370dea02%40group.calendar.google.com');
+	}
 </script>
 
 <div class="Main">
@@ -135,6 +140,17 @@
 					<br />
 					de 17:00 a 20:00hs
 				</h3>
+				<!-- <div class="wrap">
+					<a href="https://wa.me/+5491122774008?text={texto}">
+						<button class="button">Enviar Whatsapp</button>
+					</a>
+					
+				</div>
+		 -->
+				<div class="agendalo">
+					<button on:click="{() => onCommand()}">
+					Agendalo</button>
+				</div>
 			</div>
 		</div>
 		<div class="divisor">
@@ -617,6 +633,35 @@
 		margin: 0px;
 		color: var(--secondary-background);
 		text-shadow: 0.1em 0.1em 0.1em var(--cuatry-background);
+	}
+	.Main .donde .cuandoDato .agendalo {
+		margin-bottom: 30px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+	}
+	.Main .donde .cuandoDato .agendalo button{
+		font-family: Moanas;
+		width: 70%;
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 1.3px;
+		font-weight: 700;
+		color: var(--secondary-background);
+		background: var(--mar2-background);
+		background: linear-gradient(90deg, 
+		var(--mar3-background) 50%, 
+		var(--mar3-background) 100%);
+		border: none;
+		border-radius: 1000px;
+		text-shadow: 0.1em 0.1em 0.1em var(--cuatry-background);
+		box-shadow: 0 0 20px var(--cuatry-background);
+		transition: all 0.3s ease-in-out 0s;
+		cursor: pointer;
+		outline: none;
+		position: relative;
+		padding: 10px;
 	}
 	.Main .donde .Countdown {
 		padding-bottom: 20px;
