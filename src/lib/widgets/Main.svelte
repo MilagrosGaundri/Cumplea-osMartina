@@ -656,7 +656,7 @@
 		border: none;
 		border-radius: 1000px;
 		text-shadow: 0.1em 0.1em 0.1em var(--cuatry-background);
-		box-shadow: 0 0 20px var(--cuatry-background);
+		box-shadow: 0 0 20px var(--secondary-background);
 		transition: all 0.3s ease-in-out 0s;
 		cursor: pointer;
 		outline: none;
