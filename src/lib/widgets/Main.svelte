@@ -575,17 +575,17 @@
 		position: static;
 	}
 	.Main .headerM {
-		/* animation: imgM 3s; */
+		animation: imgM 3s;
 		font-size: 12px;
 		margin-top: 50px;
 	}
 	.Main .headerM .prestDisney {
-		/* animation: imgM 3s; */
+		animation: imgM 3s;
 		color: var(--secondary-background);
 		font-size: 12px;
 	}
 	.Main .bodyM {
-		/* animation: nameM 8s; */
+		animation: nameM 8s;
 		margin-top: 550px;
 	}
 	.Main .bodyM h1,
@@ -600,7 +600,7 @@
 		margin: 0px;
 	}
 	.Main .text {
-		/* animation: fade 8s; */
+		animation: fade 8s;
 		padding-top: 10px;
 		padding-bottom: 30px;
 		background-color: transparent;
@@ -747,7 +747,7 @@
 	}
 	.Main .separador .img {
 		margin-top: 30px;
-		/* animation: fade 3s; */
+		animation: fade 3s;
 		text-align: center;
 		align-items: center;
 		position: absolute;
