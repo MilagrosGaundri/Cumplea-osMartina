@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let dateCountdown: any = "Oct 23, 2022 17:00:00";
+  export let dateCountdown: any = "Oct 23, 2023 17:00:00";
 
     const second = 1000,
       minute = second * 60,
